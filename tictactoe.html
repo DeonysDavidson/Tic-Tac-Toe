@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<script type="text/javascript" src="app.js"></script>
+	<style type="text/css" >
+      
+      body{
+      	padding-left: 500px;
+      	background-color: #f1e3cb;	
+      }
+	 .but{
+	 	background-color:#4d3e3e;
+	 	height: 140px; 
+	 	width: 140px; 
+	 	font-size:100px;
+	    color: #f1e3cb;
+   }
+   .tab{
+   	padding: 0;
+   }
+
+   p{
+   	 font-size: 50px;
+   	 margin-left:50px;
+   	 margin-bottom:30px;
+   	 color: #4d3e3e;
+   }
+
+   #restart{
+   	margin-left:180px;
+   	font-size: 20px;
+
+   }
+
+	</style>
+</head>
+<body>
+    <p style="padding-left:40px">Tic Tac Toe</p>
+	<table cellpadding='60px' style="margin-top: 3%">
+		<tr>
+			<td class='tab'><button id='1'  class='but' onclick="select(id)"></button></td>
+			<td class='tab'><button id='2' class = 'but' onclick="select(id)"></button></td>
+            <td class='tab'><button id='3' class = 'but' onclick="select(id)"></button></td>
+		</tr>
+		<tr>
+			<td class='tab'><button id='4' class = 'but' onclick="select(id)"></button></td>
+			<td class='tab'><button id='5' class = 'but' onclick="select(id)"></button></td>
+            <td class='tab'><button id='6' class = 'but' onclick="select(id)"></button></td>
+		</tr>
+		<tr>
+			<td class='tab'><button id='7' class = 'but' onclick="select(id)"></button></td>
+			<td class='tab'><button id='8' class = 'but' onclick="select(id)"></button></td>
+            <td class='tab'><button id='9' class = 'but' onclick="select(id)"></button></td>
+		</tr>
+    
+	</table>	
+	<p id="message"></p>
+	
+ <button id='restart' onclick="restart()">Restart</button>
+</body>
+</html>
